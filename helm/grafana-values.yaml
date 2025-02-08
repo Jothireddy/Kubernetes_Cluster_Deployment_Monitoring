@@ -1,0 +1,5 @@
+# grafana-values.yaml
+adminUser: admin
+adminPassword: admin
+persistence:
+  enabled: false
