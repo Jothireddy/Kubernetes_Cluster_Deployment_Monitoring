@@ -140,7 +140,7 @@ Run the deployment script:
 ```
 This script initializes Terraform, applies the configuration, updates your kubectl configuration, and then deploys Prometheus and Grafana via Helm.
 
-Configuration Details
+#Configuration Details
 Terraform Variables
 aws_region: The AWS region where the cluster will be deployed (default: us-west-2).
 cluster_name: The name of your EKS cluster (default: my-eks-cluster).
@@ -149,10 +149,10 @@ node_instance_type: EC2 instance type for the worker nodes (default: t3.medium).
 desired_capacity: Number of nodes in the EKS node group (default: 2).
 Feel free to modify these in terraform/variables.tf to match your desired configuration.
 
-Helm Values Files
+#Helm Values Files
 prometheus-values.yaml: Customize settings for Prometheus (e.g., persistence, alertmanager configuration).
 grafana-values.yaml: Configure Grafana settings such as admin credentials and persistence options.
-Troubleshooting & Tips
+#Troubleshooting & Tips
 Cluster Connectivity: If kubectl cannot connect to the cluster, ensure that your AWS CLI is properly configured and that you have updated your kubeconfig using the correct cluster name and region.
 Resource Limits: For production deployments, consider adjusting the node group scaling and instance types.
 Monitoring Customizations: Modify the Helm values files if you require persistent storage, custom dashboards, or integration with additional data sources.
@@ -160,10 +160,10 @@ Logs & Debugging: Review the logs from Terraform (terraform plan and terraform a
 Contributing
 Contributions are welcome! If you have suggestions, bug fixes, or improvements, please open an issue or submit a pull request. Follow the standard Git branching model and ensure your code adheres to the project's style guidelines.
 
-License
+#License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Final Notes
+#Final Notes
 This project demonstrates modern DevOps practices by automating the provisioning of cloud infrastructure and deploying containerized applications with robust monitoring. It is a starting point that can be extended with additional features like ingress controllers, CI/CD pipelines, enhanced security policies, and more. Enjoy exploring, modifying, and building upon this setup!
 
 Happy Deploying!
