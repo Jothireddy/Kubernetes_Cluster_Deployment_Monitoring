@@ -87,7 +87,7 @@ Before you begin, ensure you have the following installed and configured:
 
    ```bash
    git clone <repository_url>
-   cd k8s-monitoring-project
+  
    ```
 Navigate to the Terraform directory:
 
